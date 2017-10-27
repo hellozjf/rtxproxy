@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://adminlte.la998.com/starter.html# -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>AdminLTE 2 | Starter</title>
+<!-- Tell the browser to be responsive to screen width -->
+<meta
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    name="viewport">
+<!-- Bootstrap 3.3.6 -->
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="../css/font-awesome.min.css">
+<!-- Ionicons -->
+<link rel="stylesheet" href="../css/ionicons.min.css">
+<!-- Theme style -->
+<link rel="stylesheet" href="../css/AdminLTE.min.css">
+<!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+        page. However, you can choose any other skin. Make sure you
+        apply the skin class to the body tag so the changes take effect.
+  -->
+<link rel="stylesheet" href="../css/skins/skin-blue.min.css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="dist/js/html5shiv.min.js"></script>
+  <script src="dist/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to get the
+desired effect
+|---------------------------------------------------------|
+| SKINS         | skin-blue                               |
+|               | skin-black                              |
+|               | skin-purple                             |
+|               | skin-yellow                             |
+|               | skin-red                                |
+|               | skin-green                              |
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | fixed                                   |
+|               | layout-boxed                            |
+|               | layout-top-nav                          |
+|               | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+<body class="skin-blue sidebar-mini">
+    <div class="wrapper">
+
+        <!-- Main Header -->
+        <header class="main-header">
+
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini">
+                    <b>A</b>
+                    LT
+                </span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg">
+                    <b>Admin</b>
+                    LTE
+                </span>
+            </a>
+
+            <!-- Header Navbar -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle"
+                    data-toggle="offcanvas" role="button">
+                    <span class="sr-only">切换导航</span>
+                </a>
+            </nav>
+        </header>
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar">
+
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+
+                <!-- Sidebar Menu -->
+                <ul class="sidebar-menu">
+                    <!-- Optionally, you can add icons to the links -->
+                    <li class="">
+                        <a href="sendMessage.html">
+                            <i class="fa fa-circle-o"></i>
+                            <span>发送消息</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="getAllMessages.html">
+                            <i class="fa fa-circle-o"></i>
+                            <span>查看所有消息</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="config.html">
+                            <i class="fa fa-circle-o"></i>
+                            <span>配置选项</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- /.sidebar-menu -->
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper" style="min-height: 633px;">
+
+            <!-- Main content -->
+            <section class="content">
+                <h1 style="float: left">所有消息</h1>
+                <button id="reload" class="btn btn-default"
+                    style="float: right">重新加载</button>
+                <button id="resend" class="btn btn-default"
+                    style="float: right">重新发送</button>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>编号</th>
+                            <th>创建时间</th>
+                            <th>修改时间</th>
+                            <th>标题</th>
+                            <th>内容</th>
+                            <th>接收者</th>
+                            <th>是否已发</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- REQUIRED JS SCRIPTS -->
+
+    <!-- jQuery 2.2.3 -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- Bootstrap 3.3.6 -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../js/app.min.js"></script>
+
+    <!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. Slimscroll is required when using the
+     fixed layout. -->
+
+
+    <span id="sbmarwbthv5"></span>
+
+    <script type="text/javascript">
+                    $('#reload').click(function() {
+                        $.ajax({
+                            url : 'getAllMessages.do',
+                            dataType : 'json',
+                            success : function(result) {
+                                if (result['success']) {
+                                    var messages = result['messages'];
+                                    var str = '';
+                                    for (var i = 0; i < messages.length; i++) {
+//                                         console.log(messages[i]);
+                                        str += '<tr>' +
+                                        '<td>' + messages[i].id + '</td>' +
+                                        '<td>' + messages[i].gmtCreate + '</td>' +
+                                        '<td>' + messages[i].gmtModified + '</td>' +
+                                        '<td>' + messages[i].title + '</td>' +
+                                        '<td>' + messages[i].msg + '</td>' +
+                                        '<td>' + messages[i].receiver + '</td>' +
+                                        '<td>' + messages[i].bSent + '</td>' +
+                                        '</tr>';
+                                        console.log(str);
+                                    }
+                                    $('#tbody').html(str);
+                                } else {
+                                    alert("reload error");
+                                }
+                            }
+                        });
+                    });
+                </script>
+</body>
+</html>

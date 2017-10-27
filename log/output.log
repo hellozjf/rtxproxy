@@ -1,0 +1,167 @@
+2017-10-27 21:24:00.171  INFO 8308 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Starting Application on DESKTOP-S30VPPC with PID 8308 (C:\zjf\code\eclipse\tools\rtxproxy\target\classes started by hellozjf in C:\zjf\code\eclipse\tools\rtxproxy)
+2017-10-27 21:24:00.172 DEBUG 8308 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2017-10-27 21:24:00.172  INFO 8308 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : No active profile set, falling back to default profiles: default
+2017-10-27 21:24:00.612  INFO 8308 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-27 21:24:00.613  INFO 8308 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.32
+2017-10-27 21:24:00.735  INFO 8308 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-27 21:24:00.739  INFO 8308 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-27 21:24:01.105  INFO 8308 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Started Application in 0.96 seconds (JVM running for 1678.101)
+2017-10-27 22:59:56.205  INFO 7520 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Starting Application on DESKTOP-S30VPPC with PID 7520 (C:\zjf\code\eclipse\tools\rtxproxy\target\classes started by hellozjf in C:\zjf\code\eclipse\tools\rtxproxy)
+2017-10-27 22:59:56.209 DEBUG 7520 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2017-10-27 22:59:56.209  INFO 7520 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : No active profile set, falling back to default profiles: default
+2017-10-27 22:59:58.978  INFO 7520 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-27 22:59:58.980  INFO 7520 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.32
+2017-10-27 22:59:59.490  INFO 7520 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-27 22:59:59.499  INFO 7520 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-27 23:00:01.618  INFO 7520 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Started Application in 5.88 seconds (JVM running for 6.701)
+2017-10-27 23:00:18.313  INFO 7520 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Starting Application on DESKTOP-S30VPPC with PID 7520 (C:\zjf\code\eclipse\tools\rtxproxy\target\classes started by hellozjf in C:\zjf\code\eclipse\tools\rtxproxy)
+2017-10-27 23:00:18.314 DEBUG 7520 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2017-10-27 23:00:18.314  INFO 7520 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : No active profile set, falling back to default profiles: default
+2017-10-27 23:00:18.996  INFO 7520 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-27 23:00:18.996  INFO 7520 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.32
+2017-10-27 23:00:19.247  INFO 7520 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-27 23:00:19.252  INFO 7520 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-27 23:00:19.832  INFO 7520 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Started Application in 1.572 seconds (JVM running for 24.914)
+2017-10-27 23:00:43.114  INFO 7520 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-27 23:05:31.750 DEBUG 7520 --- [Thread-4] c.nbsunsoft.rtxproxy.manager.RTXManager  : HttpResponseProxy{HTTP/1.1 200 OK [Date: Fri, 27 Oct 2017 15:05:31 GMT, Server: Apache/2.2.4 (Win32) PHP/5.2.3, X-Powered-By: PHP/5.2.3, Content-Length: 60, Keep-Alive: timeout=5, max=100, Connection: Keep-Alive, Content-Type: text/html] ResponseEntityProxy{[Content-Type: text/html,Content-Length: 60,Chunked: false]}}
+2017-10-27 23:05:31.750 DEBUG 7520 --- [Thread-14] c.nbsunsoft.rtxproxy.manager.RTXManager  : HttpResponseProxy{HTTP/1.1 200 OK [Date: Fri, 27 Oct 2017 15:05:31 GMT, Server: Apache/2.2.4 (Win32) PHP/5.2.3, X-Powered-By: PHP/5.2.3, Content-Length: 60, Keep-Alive: timeout=5, max=100, Connection: Keep-Alive, Content-Type: text/html] ResponseEntityProxy{[Content-Type: text/html,Content-Length: 60,Chunked: false]}}
+2017-10-27 23:06:19.828 DEBUG 7520 --- [Thread-4] c.nbsunsoft.rtxproxy.manager.RTXManager  : HttpResponseProxy{HTTP/1.1 200 OK [Date: Fri, 27 Oct 2017 15:06:19 GMT, Server: Apache/2.2.4 (Win32) PHP/5.2.3, X-Powered-By: PHP/5.2.3, Content-Length: 60, Keep-Alive: timeout=5, max=100, Connection: Keep-Alive, Content-Type: text/html] ResponseEntityProxy{[Content-Type: text/html,Content-Length: 60,Chunked: false]}}
+2017-10-27 23:06:19.829 DEBUG 7520 --- [Thread-14] c.nbsunsoft.rtxproxy.manager.RTXManager  : HttpResponseProxy{HTTP/1.1 200 OK [Date: Fri, 27 Oct 2017 15:06:19 GMT, Server: Apache/2.2.4 (Win32) PHP/5.2.3, X-Powered-By: PHP/5.2.3, Content-Length: 60, Keep-Alive: timeout=5, max=100, Connection: Keep-Alive, Content-Type: text/html] ResponseEntityProxy{[Content-Type: text/html,Content-Length: 60,Chunked: false]}}
+2017-10-27 23:08:46.009 DEBUG 7520 --- [Thread-4] c.nbsunsoft.rtxproxy.manager.RTXManager  : HttpResponseProxy{HTTP/1.1 200 OK [Date: Fri, 27 Oct 2017 15:08:45 GMT, Server: Apache/2.2.4 (Win32) PHP/5.2.3, X-Powered-By: PHP/5.2.3, Content-Length: 60, Keep-Alive: timeout=5, max=100, Connection: Keep-Alive, Content-Type: text/html] ResponseEntityProxy{[Content-Type: text/html,Content-Length: 60,Chunked: false]}}
+2017-10-27 23:08:46.018 DEBUG 7520 --- [Thread-14] c.nbsunsoft.rtxproxy.manager.RTXManager  : HttpResponseProxy{HTTP/1.1 200 OK [Date: Fri, 27 Oct 2017 15:08:46 GMT, Server: Apache/2.2.4 (Win32) PHP/5.2.3, X-Powered-By: PHP/5.2.3, Content-Length: 60, Keep-Alive: timeout=5, max=100, Connection: Keep-Alive, Content-Type: text/html] ResponseEntityProxy{[Content-Type: text/html,Content-Length: 60,Chunked: false]}}
+2017-10-27 23:12:07.227 DEBUG 7520 --- [Thread-4] c.nbsunsoft.rtxproxy.manager.RTXManager  : HttpResponseProxy{HTTP/1.1 200 OK [Date: Fri, 27 Oct 2017 15:12:07 GMT, Server: Apache/2.2.4 (Win32) PHP/5.2.3, X-Powered-By: PHP/5.2.3, Content-Length: 60, Keep-Alive: timeout=5, max=100, Connection: Keep-Alive, Content-Type: text/html] ResponseEntityProxy{[Content-Type: text/html,Content-Length: 60,Chunked: false]}}
+2017-10-27 23:12:45.298 DEBUG 7520 --- [Thread-4] c.nbsunsoft.rtxproxy.manager.RTXManager  : HttpResponseProxy{HTTP/1.1 200 OK [Date: Fri, 27 Oct 2017 15:12:45 GMT, Server: Apache/2.2.4 (Win32) PHP/5.2.3, X-Powered-By: PHP/5.2.3, Content-Length: 60, Keep-Alive: timeout=5, max=100, Connection: Keep-Alive, Content-Type: text/html] ResponseEntityProxy{[Content-Type: text/html,Content-Length: 60,Chunked: false]}}
+2017-10-27 23:12:45.320 DEBUG 7520 --- [Thread-14] c.nbsunsoft.rtxproxy.manager.RTXManager  : HttpResponseProxy{HTTP/1.1 200 OK [Date: Fri, 27 Oct 2017 15:12:45 GMT, Server: Apache/2.2.4 (Win32) PHP/5.2.3, X-Powered-By: PHP/5.2.3, Content-Length: 60, Keep-Alive: timeout=5, max=100, Connection: Keep-Alive, Content-Type: text/html] ResponseEntityProxy{[Content-Type: text/html,Content-Length: 60,Chunked: false]}}
+2017-10-27 23:36:39.993  INFO 7520 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Starting Application on DESKTOP-S30VPPC with PID 7520 (C:\zjf\code\eclipse\tools\rtxproxy\target\classes started by hellozjf in C:\zjf\code\eclipse\tools\rtxproxy)
+2017-10-27 23:36:39.994 DEBUG 7520 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2017-10-27 23:36:39.994  INFO 7520 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : No active profile set, falling back to default profiles: default
+2017-10-27 23:36:40.864  INFO 7520 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-27 23:36:40.866  INFO 7520 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.32
+2017-10-27 23:36:41.266  INFO 7520 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-27 23:36:41.272  INFO 7520 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-27 23:36:41.917  INFO 7520 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Started Application in 1.996 seconds (JVM running for 2206.999)
+2017-10-27 23:36:45.611  INFO 7520 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Starting Application on DESKTOP-S30VPPC with PID 7520 (C:\zjf\code\eclipse\tools\rtxproxy\target\classes started by hellozjf in C:\zjf\code\eclipse\tools\rtxproxy)
+2017-10-27 23:36:45.611 DEBUG 7520 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2017-10-27 23:36:45.612  INFO 7520 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : No active profile set, falling back to default profiles: default
+2017-10-27 23:36:46.263  INFO 7520 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-27 23:36:46.264  INFO 7520 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.32
+2017-10-27 23:36:46.458  INFO 7520 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-27 23:36:46.464  INFO 7520 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-27 23:36:46.972  INFO 7520 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Started Application in 1.402 seconds (JVM running for 2212.054)
+2017-10-27 23:36:57.487  INFO 7520 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-27 23:37:28.229  INFO 7520 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Starting Application on DESKTOP-S30VPPC with PID 7520 (C:\zjf\code\eclipse\tools\rtxproxy\target\classes started by hellozjf in C:\zjf\code\eclipse\tools\rtxproxy)
+2017-10-27 23:37:28.229 DEBUG 7520 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2017-10-27 23:37:28.229  INFO 7520 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : No active profile set, falling back to default profiles: default
+2017-10-27 23:37:28.859  INFO 7520 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-27 23:37:28.860  INFO 7520 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.32
+2017-10-27 23:37:29.090  INFO 7520 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-27 23:37:29.096  INFO 7520 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-27 23:37:29.515  INFO 7520 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Started Application in 1.318 seconds (JVM running for 2254.598)
+2017-10-27 23:37:35.197  INFO 7520 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-27 23:53:04.479  INFO 8396 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Starting Application on DESKTOP-S30VPPC with PID 8396 (C:\zjf\code\eclipse\tools\rtxproxy\target\classes started by hellozjf in C:\zjf\code\eclipse\tools\rtxproxy)
+2017-10-27 23:53:04.484 DEBUG 8396 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2017-10-27 23:53:04.484  INFO 8396 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : No active profile set, falling back to default profiles: default
+2017-10-27 23:53:07.194  INFO 8396 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-27 23:53:07.196  INFO 8396 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.32
+2017-10-27 23:53:07.710  INFO 8396 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-27 23:53:07.718  INFO 8396 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-27 23:53:09.728  INFO 8396 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Started Application in 5.653 seconds (JVM running for 6.256)
+2017-10-27 23:53:17.255  INFO 8396 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-27 23:57:16.109  INFO 8396 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Starting Application on DESKTOP-S30VPPC with PID 8396 (C:\zjf\code\eclipse\tools\rtxproxy\target\classes started by hellozjf in C:\zjf\code\eclipse\tools\rtxproxy)
+2017-10-27 23:57:16.109 DEBUG 8396 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2017-10-27 23:57:16.110  INFO 8396 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : No active profile set, falling back to default profiles: default
+2017-10-27 23:57:17.078  INFO 8396 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-27 23:57:17.078  INFO 8396 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.32
+2017-10-27 23:57:17.352  INFO 8396 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-27 23:57:17.357  INFO 8396 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-27 23:57:17.977  INFO 8396 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Started Application in 1.919 seconds (JVM running for 254.504)
+2017-10-27 23:57:23.172  INFO 8396 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-28 00:02:56.643 ERROR 8396 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing ErrorPage[errorCode=0, location=/error]
+
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:393) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.tomcat.util.buf.ByteChunk.flushBuffer(ByteChunk.java:426) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:342) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:317) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:110) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at com.fasterxml.jackson.core.json.UTF8JsonGenerator.flush(UTF8JsonGenerator.java:1022) ~[jackson-core-2.6.5.jar:2.6.5]
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:891) ~[jackson-databind-2.6.5.jar:2.6.5]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:265) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:100) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:222) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:183) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:80) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:126) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:817) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:731) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:859) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:720) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:468) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:391) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:318) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:445) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:304) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:181) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_144]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.0.32.jar:8.0.32]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+Caused by: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:1.8.0_144]
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51) ~[na:1.8.0_144]
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93) ~[na:1.8.0_144]
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65) ~[na:1.8.0_144]
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471) ~[na:1.8.0_144]
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:124) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:172) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.coyote.http11.InternalNioOutputBuffer.writeToSocket(InternalNioOutputBuffer.java:139) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.coyote.http11.InternalNioOutputBuffer.addToBB(InternalNioOutputBuffer.java:197) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.coyote.http11.InternalNioOutputBuffer.access$000(InternalNioOutputBuffer.java:41) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.coyote.http11.InternalNioOutputBuffer$SocketOutputBuffer.doWrite(InternalNioOutputBuffer.java:320) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.doWrite(ChunkedOutputFilter.java:121) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.coyote.http11.AbstractOutputBuffer.doWrite(AbstractOutputBuffer.java:256) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.coyote.Response.doWrite(Response.java:501) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:388) ~[tomcat-embed-core-8.0.32.jar:8.0.32]
+	... 42 common frames omitted
+
+2017-10-28 01:13:29.769 DEBUG 8396 --- [Thread-4] c.nbsunsoft.rtxproxy.manager.RTXManager  : HttpResponseProxy{HTTP/1.1 200 OK [Date: Fri, 27 Oct 2017 17:13:29 GMT, Server: Apache/2.2.4 (Win32) PHP/5.2.3, X-Powered-By: PHP/5.2.3, Content-Length: 60, Keep-Alive: timeout=5, max=100, Connection: Keep-Alive, Content-Type: text/html] ResponseEntityProxy{[Content-Type: text/html,Content-Length: 60,Chunked: false]}}
+2017-10-28 01:13:29.769 DEBUG 8396 --- [Thread-14] c.nbsunsoft.rtxproxy.manager.RTXManager  : HttpResponseProxy{HTTP/1.1 200 OK [Date: Fri, 27 Oct 2017 17:13:29 GMT, Server: Apache/2.2.4 (Win32) PHP/5.2.3, X-Powered-By: PHP/5.2.3, Content-Length: 60, Keep-Alive: timeout=5, max=100, Connection: Keep-Alive, Content-Type: text/html] ResponseEntityProxy{[Content-Type: text/html,Content-Length: 60,Chunked: false]}}
+2017-10-28 01:14:59.900  INFO 8396 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Starting Application on DESKTOP-S30VPPC with PID 8396 (C:\zjf\code\eclipse\tools\rtxproxy\target\classes started by hellozjf in C:\zjf\code\eclipse\tools\rtxproxy)
+2017-10-28 01:14:59.901 DEBUG 8396 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2017-10-28 01:14:59.901  INFO 8396 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : No active profile set, falling back to default profiles: default
+2017-10-28 01:15:00.679  INFO 8396 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-28 01:15:00.679  INFO 8396 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.32
+2017-10-28 01:15:00.941  INFO 8396 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-28 01:15:00.945  INFO 8396 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-28 01:15:01.625  INFO 8396 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Started Application in 1.767 seconds (JVM running for 4918.152)
+2017-10-28 01:15:13.401  INFO 8396 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-28 01:36:31.161  INFO 8396 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Starting Application on DESKTOP-S30VPPC with PID 8396 (C:\zjf\code\eclipse\tools\rtxproxy\target\classes started by hellozjf in C:\zjf\code\eclipse\tools\rtxproxy)
+2017-10-28 01:36:31.161 DEBUG 8396 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2017-10-28 01:36:31.162  INFO 8396 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : No active profile set, falling back to default profiles: default
+2017-10-28 01:36:32.052  INFO 8396 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-28 01:36:32.053  INFO 8396 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.32
+2017-10-28 01:36:32.280  INFO 8396 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-28 01:36:32.285  INFO 8396 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-28 01:36:32.945  INFO 8396 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Started Application in 1.833 seconds (JVM running for 6209.472)
+2017-10-28 01:36:39.284  INFO 8396 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-28 01:38:14.401 DEBUG 8396 --- [http-nio-8080-exec-5] c.n.rtxproxy.web.MessageController       : message:Message [id=null, gmtCreate=null, gmtModified=null, title=null, msg=null, receiver=null, bSent=null]
+2017-10-28 01:38:14.600 DEBUG 8396 --- [Thread-20] c.nbsunsoft.rtxproxy.manager.RTXManager  : HttpResponseProxy{HTTP/1.1 200 OK [Date: Fri, 27 Oct 2017 17:38:14 GMT, Server: Apache/2.2.4 (Win32) PHP/5.2.3, X-Powered-By: PHP/5.2.3, Content-Length: 60, Keep-Alive: timeout=5, max=100, Connection: Keep-Alive, Content-Type: text/html] ResponseEntityProxy{[Content-Type: text/html,Content-Length: 60,Chunked: false]}}
+2017-10-28 01:40:14.260 DEBUG 8396 --- [http-nio-8080-exec-8] c.n.rtxproxy.web.MessageController       : message:Message [id=null, gmtCreate=null, gmtModified=null, title=1, msg=2, receiver=3, bSent=null]
+2017-10-28 01:40:14.710 DEBUG 8396 --- [Thread-20] c.nbsunsoft.rtxproxy.manager.RTXManager  : HttpResponseProxy{HTTP/1.1 200 OK [Date: Fri, 27 Oct 2017 17:40:14 GMT, Server: Apache/2.2.4 (Win32) PHP/5.2.3, X-Powered-By: PHP/5.2.3, Content-Length: 60, Keep-Alive: timeout=5, max=100, Connection: Keep-Alive, Content-Type: text/html] ResponseEntityProxy{[Content-Type: text/html,Content-Length: 60,Chunked: false]}}
