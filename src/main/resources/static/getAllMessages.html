@@ -7,9 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>AdminLTE 2 | Starter</title>
 <!-- Tell the browser to be responsive to screen width -->
-<meta
-    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-    name="viewport">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 <!-- Bootstrap 3.3.6 -->
 <link rel="stylesheet" href="../css/bootstrap.min.css">
 <!-- Font Awesome -->
@@ -74,8 +72,7 @@ desired effect
             <!-- Header Navbar -->
             <nav class="navbar navbar-static-top" role="navigation">
                 <!-- Sidebar toggle button-->
-                <a href="#" class="sidebar-toggle"
-                    data-toggle="offcanvas" role="button">
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
                     <span class="sr-only">切换导航</span>
                 </a>
             </nav>
@@ -119,13 +116,14 @@ desired effect
             <!-- Main content -->
             <section class="content">
                 <h1 style="float: left">所有消息</h1>
-                <button id="reload" class="btn btn-default"
-                    style="float: right">重新加载</button>
-                <button id="resend" class="btn btn-default"
-                    style="float: right">重新发送</button>
-                <table class="table table-hover">
+                <button id="reload" class="btn btn-default" style="float: right">重新加载</button>
+                <button id="resend" class="btn btn-default" style="float: right">重新发送</button>
+                <table class="table table-bordered  table-striped table-hover">
                     <thead>
-                        <tr>
+                        <tr class="info">
+                            <th>
+                                <input type="checkbox" id="checkAll" name="checkAll" />
+                            </th>
                             <th>编号</th>
                             <th>创建时间</th>
                             <th>修改时间</th>
@@ -152,6 +150,7 @@ desired effect
     <script src="../js/jquery.min.js"></script>
     <!-- Bootstrap 3.3.6 -->
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/moment.min.js"></script>
     <!-- AdminLTE App -->
     <script src="../js/app.min.js"></script>
 
@@ -163,35 +162,6 @@ desired effect
 
     <span id="sbmarwbthv5"></span>
 
-    <script type="text/javascript">
-                    $('#reload').click(function() {
-                        $.ajax({
-                            url : 'getAllMessages.do',
-                            dataType : 'json',
-                            success : function(result) {
-                                if (result['success']) {
-                                    var messages = result['messages'];
-                                    var str = '';
-                                    for (var i = 0; i < messages.length; i++) {
-//                                         console.log(messages[i]);
-                                        str += '<tr>' +
-                                        '<td>' + messages[i].id + '</td>' +
-                                        '<td>' + messages[i].gmtCreate + '</td>' +
-                                        '<td>' + messages[i].gmtModified + '</td>' +
-                                        '<td>' + messages[i].title + '</td>' +
-                                        '<td>' + messages[i].msg + '</td>' +
-                                        '<td>' + messages[i].receiver + '</td>' +
-                                        '<td>' + messages[i].bSent + '</td>' +
-                                        '</tr>';
-                                        console.log(str);
-                                    }
-                                    $('#tbody').html(str);
-                                } else {
-                                    alert("reload error");
-                                }
-                            }
-                        });
-                    });
-                </script>
+    <script src="../js/getAllMessages.js"></script>
 </body>
 </html>

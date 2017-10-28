@@ -7,9 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>AdminLTE 2 | Starter</title>
 <!-- Tell the browser to be responsive to screen width -->
-<meta
-    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-    name="viewport">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 <!-- Bootstrap 3.3.6 -->
 <link rel="stylesheet" href="../css/bootstrap.min.css">
 <!-- Font Awesome -->
@@ -74,8 +72,7 @@ desired effect
             <!-- Header Navbar -->
             <nav class="navbar navbar-static-top" role="navigation">
                 <!-- Sidebar toggle button-->
-                <a href="#" class="sidebar-toggle"
-                    data-toggle="offcanvas" role="button">
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
                     <span class="sr-only">切换导航</span>
                 </a>
             </nav>
@@ -119,7 +116,7 @@ desired effect
             <!-- Main content -->
             <section class="content">
                 <h1>发送消息</h1>
-                <form class="form-horizontal" role="form" action="sendMessage.do">
+                <form class="form-horizontal" role="form" id="form">
                     <div class="form-group">
                         <label class="col-sm-2 control-label">标题</label>
                         <div class="col-sm-8">
@@ -140,7 +137,7 @@ desired effect
                     </div>
                     <div class="form-group">
                         <div class="col-sm-10">
-                            <input type="submit" class="btn btn-default pull-right">
+                            <input type="button" class="btn btn-default pull-right" id="submit" value="提交">
                         </div>
                     </div>
                 </form>
@@ -151,6 +148,56 @@ desired effect
 
     </div>
     <!-- ./wrapper -->
+
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">发送消息成功</h4>
+                </div>
+                <div class="modal-body">test
+                    <table>
+                        <tr>
+                            <td>编号</td>
+                            <td id="dialogId"></td>
+                        </tr>
+                        <tr>
+                            <td>创建时间</td>
+                            <td id="dialogGmtCreate"></td>
+                        </tr>
+                        <tr>
+                            <td>修改时间</td>
+                            <td id="dialogGmtModified"></td>
+                        </tr>
+                        <tr>
+                            <td>标题</td>
+                            <td id="dialogTitle"></td>
+                        </tr>
+                        <tr>
+                            <td>内容</td>
+                            <td id="dialogMsg"></td>
+                        </tr>
+                        <tr>
+                            <td>接收者</td>
+                            <td id="dialogReceiver"></td>
+                        </tr>
+                        <tr>
+                            <td>是否已发</td>
+                            <td id="dialogBSent"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+<!--                     <button type="button" class="btn btn-primary">提交更改</button> -->
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal -->
+    </div>
 
     <!-- REQUIRED JS SCRIPTS -->
 
@@ -166,6 +213,7 @@ desired effect
      user experience. Slimscroll is required when using the
      fixed layout. -->
 
+    <script src="../js/sendMessage.js"></script>
 
     <span id="sbmarwbthv5"></span>
 </body>
