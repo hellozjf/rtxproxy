@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.nbsunsoft.rtxproxy.domain.Message;
-import com.nbsunsoft.rtxproxy.manager.RTXManager;
 import com.nbsunsoft.rtxproxy.service.MessageService;
+import com.nbsunsoft.rtxproxy.service.RTXService;
 import com.nbsunsoft.rtxproxy.util.PropertiesUtils;
 
 @Component("rtxProxySendThread")
@@ -17,7 +17,7 @@ public class RTXProxySendThread extends Thread {
 
     private MessageService messageService;
     
-    private RTXManager rtxManager;
+    private RTXService rtxManager;
     
     @Override
     public void run() {
@@ -45,7 +45,7 @@ public class RTXProxySendThread extends Thread {
     }
 
     @Autowired
-    public void setRtxManager(RTXManager rtxManager) {
+    public void setRtxManager(RTXService rtxManager) {
         this.rtxManager = rtxManager;
     }
 }

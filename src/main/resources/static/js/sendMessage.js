@@ -12,21 +12,22 @@ $('#submit').click(function() {
             console.log(result);
             if (result.success) {
                 var message = result.message;
-                console.log(message);
-                $('#dialogId').text(message.id);
-                $('#dialogGmtCreate').text(message.gmtCreate);
-                $('#dialogGmtModified').text(message.gmtModified);
-                $('#dialogTitle').text(message.title);
-                $('#dialogMsg').text(message.msg);
-                $('#dialogReceiver').text(message.receiver);
-                $('#dialogBSent').text(message.bSent);
-                $('#myModal').modal('show');
+                alert("发送消息成功")
+//                console.log(message);
+//                $('#dialogId').text(message.id);
+//                $('#dialogGmtCreate').text(message.gmtCreate);
+//                $('#dialogGmtModified').text(message.gmtModified);
+//                $('#dialogTitle').text(message.title);
+//                $('#dialogMsg').text(message.msg);
+//                $('#dialogReceiver').text(message.receiver);
+//                $('#dialogBSent').text(message.bSent);
+//                $('#myModal').modal('show');
             } else {
-                alert("sendMessage error");
+                alert("发送消息失败");
             }
         },
         error: function(json){  
-            alert("sendMessage error");  
+            alert("未知错误");  
         } 
     });
 });

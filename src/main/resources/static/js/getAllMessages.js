@@ -74,11 +74,11 @@ $('#reload').click(function() {
 
                 initTableCheckbox();
             } else {
-                alert("reload error");
+                alert("重新加载失败");
             }
         },
         error : function(json) {
-            alert("reload error");
+            alert("未知错误");
         }
     });
 });
@@ -93,6 +93,11 @@ $('#resend').click(function() {
         ids.push(id);
     });
     console.log(ids);
+    
+    if (ids.length == 0) {
+        alert("请至少选择一条消息");
+        return;
+    }
 
     $.ajax({
         url : 'resendMessage.do',
@@ -105,16 +110,20 @@ $('#resend').click(function() {
             if (result.success) {
                 var messages = result.messages;
                 var retIds = [];
-                for (var i in messages) {
+                for ( var i in messages) {
                     retIds.push(messages[i].id);
                 }
-                alert(`resend id=${retIds} success`);
+                alert("重新发送成功");
             } else {
-                alert("resendMessage error");
+                alert("重新发送失败");
             }
         },
         error : function(json) {
-            alert("resendMessages error");
+            alert("未知错误");
         }
     });
+});
+
+$(document).ready(function() {
+    $('#reload').click();
 });

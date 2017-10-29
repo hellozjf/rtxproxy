@@ -1,4 +1,4 @@
-package com.nbsunsoft.rtxproxy.manager;
+package com.nbsunsoft.rtxproxy.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,9 +16,9 @@ import org.springframework.stereotype.Service;
 import com.nbsunsoft.rtxproxy.domain.Message;
 
 @Service("rtxManager")
-public class RTXManager {
+public class RTXService {
     
-    private static final Logger LOG = LoggerFactory.getLogger(RTXManager.class);
+    private static final Logger LOG = LoggerFactory.getLogger(RTXService.class);
 
     public boolean sendToRTXServer(String url, Message message) throws Exception {
         // 从配置文件读IP地址
