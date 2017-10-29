@@ -7,7 +7,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.ModelAndView;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
@@ -21,26 +20,6 @@ public class MessageController {
     private static final Logger LOG = LoggerFactory.getLogger(MessageController.class);
     
     private MessageService messageService;
-    
-//    @RequestMapping("/{id}")
-//    public String getMessage(@PathVariable("id") Integer id) {
-//        LOG.debug("id:{}", id);
-//        Message message = messageService.getMessageById(id);
-//        return JSON.toJSONString(message);
-//    }
-//    
-//    @RequestMapping("/all")
-//    public String getAllMessage() {
-//        List<Message> messages = messageService.listMessage();
-//        return JSON.toJSONString(messages);
-//    }
-//    
-//    @RequestMapping("/add")
-//    public String addMessage(Message message) {
-//        Integer id = messageService.pushMessage(message);
-//        Message m = messageService.getMessageById(id);
-//        return JSON.toJSONString(m);
-//    }
     
     @RequestMapping("sendMessage.do")
     public String sendMessage(Message message) {
@@ -57,6 +36,7 @@ public class MessageController {
     
     @RequestMapping("getAllMessages.do")
     public String getAllMessages() {
+        LOG.debug("getAllMessages.do");
         List<Message> messages = messageService.listMessage();
         
         JSONObject jsonObject = new JSONObject();
@@ -67,15 +47,18 @@ public class MessageController {
     }
     
     @RequestMapping("resendMessage.do")
-    public String resendMessage(Message message) {
-        Integer id = message.getId();
-        messageService.setUnsendById(id);
-        Message m = messageService.getMessageById(id);
+    public String resendMessage(String ids) {
+        JSONArray jsonIds = JSONArray.parseArray(ids);
+        List<Integer> iids = jsonIds.toJavaList(Integer.class);
+        LOG.debug("resendMessage.do ids={}", iids);
+        messageService.setUnsendByIds(iids);
+        List<Message> messages = messageService.listMessage(iids);
+        LOG.debug("messages:{}", messages);
         
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("success", true);
         jsonObject.put("reason", "");
-        jsonObject.put("message", (JSONObject) JSON.toJSON(m));
+        jsonObject.put("messages", (JSONArray) JSON.toJSON(messages));
         return jsonObject.toJSONString();
     }
 

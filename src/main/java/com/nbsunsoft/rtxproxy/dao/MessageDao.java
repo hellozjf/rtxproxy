@@ -74,6 +74,30 @@ public class MessageDao {
         });
         return messages;
     }
+    
+    public List<Message> listMessage(List<Integer> ids) {
+        // 拼出select * from t_message where id in (1,2,3)
+        StringBuilder stringBuilder = new StringBuilder(QUERY_ALL_SQL);
+        stringBuilder.append(" where id in (");
+        for (int i = 0; i < ids.size() - 1; i++) {
+            stringBuilder.append(ids.get(i) + ",");
+        }
+        stringBuilder.append(ids.get(ids.size() - 1) + ")");
+        
+        List<Message> messages = new ArrayList<>();
+        jdbcTemplate.query(stringBuilder.toString(), rs -> {
+            Message message = new Message();
+            message.setId(rs.getInt("id"));
+            message.setGmtCreate(Instant.parse(rs.getString("gmt_create")));
+            message.setGmtModified(Instant.parse(rs.getString("gmt_modified")));
+            message.setTitle(rs.getString("title"));
+            message.setMsg(rs.getString("msg"));
+            message.setReceiver(rs.getString("receiver"));
+            message.setbSent(rs.getInt("b_sent"));
+            messages.add(message);
+        });
+        return messages;
+    }
 
     public int countMessage() {
         return jdbcTemplate.queryForObject(COUNT_SQL, Integer.class);

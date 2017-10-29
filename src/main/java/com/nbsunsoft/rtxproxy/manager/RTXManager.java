@@ -25,14 +25,18 @@ public class RTXManager {
         HttpPost httpRequst = new HttpPost(url);// 创建HttpPost对象
 
         List<NameValuePair> params = new ArrayList<NameValuePair>();
-        params.add(new BasicNameValuePair("title", message.getTitle()));
-        params.add(new BasicNameValuePair("msg", message.getMsg()));
-        params.add(new BasicNameValuePair("receiver", message.getReceiver()));
+        String title = message.getTitle();
+        String msg = message.getMsg();
+        String receiver = message.getReceiver();
+        params.add(new BasicNameValuePair("title", title));
+        params.add(new BasicNameValuePair("msg", msg));
+        params.add(new BasicNameValuePair("receiver", receiver));
 
         httpRequst.setEntity(new UrlEncodedFormEntity(params, "gbk"));
         try {
             HttpResponse httpResponse = HttpClients.createDefault().execute(httpRequst);
-            LOG.debug("{}", httpResponse);
+            LOG.debug("send to {}?title={}&msg={}&receiver={} success", url, title, msg, receiver);
+//            LOG.debug("{}", httpResponse);
             return true;
         } catch (Exception e) {
             LOG.error("{}", e);

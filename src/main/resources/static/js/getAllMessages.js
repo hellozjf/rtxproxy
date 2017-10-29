@@ -59,7 +59,7 @@ $('#reload').click(function() {
                     var bSent = messages[i].bSent;
 
                     var tdInput = `<td><input type="checkbox" id="${checkboxId}"></td>`;
-                    var tdId = `<td>${id}</td>`;
+                    var tdId = `<td name="id">${id}</td>`;
                     var tdGmtCreate = `<td>${gmtCreate}</td>`;
                     var tdGmtModified = `<td>${gmtModified}</td>`;
                     var tdTitle = `<td>${title}</td>`;
@@ -76,10 +76,45 @@ $('#reload').click(function() {
             } else {
                 alert("reload error");
             }
+        },
+        error : function(json) {
+            alert("reload error");
         }
     });
 });
 
-// $(function() {
-// initTableCheckbox();
-// });
+$('#resend').click(function() {
+    var ids = [];
+    $(':checkbox:checked', '#table').each(function() {
+        console.log($(this));
+        var tablerow = $(this).parent().parent();
+        console.log(tablerow);
+        var id = parseInt(tablerow.find('td[name="id"]').text());
+        ids.push(id);
+    });
+    console.log(ids);
+
+    $.ajax({
+        url : 'resendMessage.do',
+        data : {
+            'ids' : JSON.stringify(ids)
+        },
+        success : function(ret) {
+            var result = JSON.parse(ret);
+            console.log(result);
+            if (result.success) {
+                var messages = result.messages;
+                var retIds = [];
+                for (var i in messages) {
+                    retIds.push(messages[i].id);
+                }
+                alert(`resend id=${retIds} success`);
+            } else {
+                alert("resendMessage error");
+            }
+        },
+        error : function(json) {
+            alert("resendMessages error");
+        }
+    });
+});

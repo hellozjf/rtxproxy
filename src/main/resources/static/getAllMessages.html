@@ -22,6 +22,8 @@
   -->
 <link rel="stylesheet" href="../css/skins/skin-blue.min.css">
 
+<link rel="stylesheet" href="../css/title.css">
+
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -58,15 +60,9 @@ desired effect
             <!-- Logo -->
             <a href="#" class="logo">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
-                <span class="logo-mini">
-                    <b>A</b>
-                    LT
-                </span>
+                <span class="logo-mini"> rtx </span>
                 <!-- logo for regular state and mobile devices -->
-                <span class="logo-lg">
-                    <b>Admin</b>
-                    LTE
-                </span>
+                <span class="logo-lg"> rtxproxy </span>
             </a>
 
             <!-- Header Navbar -->
@@ -115,10 +111,14 @@ desired effect
 
             <!-- Main content -->
             <section class="content">
-                <h1 style="float: left">所有消息</h1>
-                <button id="reload" class="btn btn-default" style="float: right">重新加载</button>
-                <button id="resend" class="btn btn-default" style="float: right">重新发送</button>
-                <table class="table table-bordered  table-striped table-hover">
+                <div class="title-div">
+                    <h1 class="title-h1">所有消息</h1>
+                    <div class="title-buttons">
+                        <button id="reload" class="btn btn-default">重新加载</button>
+                        <button id="resend" class="btn btn-default">重新发送</button>
+                    </div>
+                </div>
+                <table id="table" class="table table-bordered  table-striped table-hover">
                     <thead>
                         <tr class="info">
                             <th>

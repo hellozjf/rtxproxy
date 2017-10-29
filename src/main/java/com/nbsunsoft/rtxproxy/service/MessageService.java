@@ -64,6 +64,14 @@ public class MessageService {
         messageDao.updateMessage(message);
     }
     
+    public synchronized void setUnsendByIds(List<Integer> ids) {
+        for (int i = 0; i < ids.size(); i++) {
+            Message message = messageDao.getMessage(ids.get(i));
+            message.setbSent(0);
+            messageDao.updateMessage(message);
+        }
+    }
+    
     public synchronized JSONArray sentUnsendByJSON(String jsonString) {
         JSONObject jsonObject = JSON.parseObject(jsonString);
         JSONArray ids = jsonObject.getJSONArray("ids");
@@ -76,6 +84,10 @@ public class MessageService {
     
     public synchronized List<Message> listMessage() {
         return messageDao.listMessage();
+    }
+    
+    public synchronized List<Message> listMessage(List<Integer> ids) {
+        return messageDao.listMessage(ids);
     }
     
     public synchronized boolean writeJSONToSQLite(String jsonString) {
