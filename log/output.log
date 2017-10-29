@@ -2356,3 +2356,25 @@ java.lang.ArrayIndexOutOfBoundsException: -1
 2017-10-29 21:09:01.473 DEBUG 22852 --- [http-nio-10088-exec-9] c.n.rtxproxy.service.ConfigService       : filePathName=C:\zjf\code\eclipse\tools\rtxproxy\conf\rtxproxy.properties fileName=rtxproxy.properties
 2017-10-29 21:09:01.476 DEBUG 22852 --- [http-nio-10088-exec-9] c.n.rtxproxy.service.ConfigService       : downloadConfig success
 2017-10-29 21:09:11.515 DEBUG 22852 --- [http-nio-10088-exec-3] c.n.rtxproxy.web.MessageController       : getAllMessages.do
+2017-10-29 21:23:22.381 DEBUG 22852 --- [http-nio-10088-exec-2] c.n.rtxproxy.web.MessageController       : getAllMessages.do
+2017-10-29 21:23:24.687 DEBUG 22852 --- [http-nio-10088-exec-4] c.n.rtxproxy.web.ConfigController        : getConfig
+2017-10-29 21:23:25.957 DEBUG 22852 --- [http-nio-10088-exec-7] c.n.rtxproxy.web.ConfigController        : downloadConfig
+2017-10-29 21:23:25.958 DEBUG 22852 --- [http-nio-10088-exec-7] c.n.rtxproxy.service.ConfigService       : filePathName=C:\zjf\code\eclipse\tools\rtxproxy\conf\rtxproxy.properties fileName=rtxproxy.properties
+2017-10-29 21:23:25.960 DEBUG 22852 --- [http-nio-10088-exec-7] c.n.rtxproxy.service.ConfigService       : downloadConfig success
+2017-10-29 21:41:18.984  INFO 22952 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Starting Application on DESKTOP-S30VPPC with PID 22952 (C:\zjf\code\eclipse\tools\rtxproxy\target\classes started by hellozjf in C:\zjf\code\eclipse\tools\rtxproxy)
+2017-10-29 21:41:18.988 DEBUG 22952 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2017-10-29 21:41:18.988  INFO 22952 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : No active profile set, falling back to default profiles: default
+2017-10-29 21:41:22.221  INFO 22952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-10-29 21:41:22.223  INFO 22952 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.32
+2017-10-29 21:41:22.901  INFO 22952 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-29 21:41:22.909  INFO 22952 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-29 21:41:25.575  INFO 22952 --- [restartedMain] com.nbsunsoft.rtxproxy.Application       : Started Application in 7.019 seconds (JVM running for 7.714)
+2017-10-29 21:41:34.298  INFO 22952 --- [http-nio-10088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-29 21:41:42.440 DEBUG 22952 --- [http-nio-10088-exec-10] c.n.rtxproxy.web.MessageController       : getAllMessages.do
+2017-10-29 21:41:47.760 DEBUG 22952 --- [http-nio-10088-exec-1] c.n.rtxproxy.web.ConfigController        : getConfig
+2017-10-29 21:42:00.244 DEBUG 22952 --- [http-nio-10088-exec-10] c.n.rtxproxy.web.ConfigController        : getConfig
+2017-10-29 21:42:01.880 DEBUG 22952 --- [http-nio-10088-exec-9] c.n.rtxproxy.web.MessageController       : getAllMessages.do
+2017-10-29 21:42:10.005 DEBUG 22952 --- [http-nio-10088-exec-1] c.n.rtxproxy.web.MessageController       : resendMessage.do ids=[3]
+2017-10-29 21:42:10.035 DEBUG 22952 --- [http-nio-10088-exec-1] c.n.rtxproxy.web.MessageController       : messages:[Message [id=3, gmtCreate=2017-10-27T15:05:30.579Z, gmtModified=2017-10-27T15:05:30.579Z, title=title, msg=msg, receiver=guest, bSent=0]]
+2017-10-29 21:42:10.881 DEBUG 22952 --- [Thread-4] c.nbsunsoft.rtxproxy.RTXProxySendThread  : will send message Message [id=3, gmtCreate=2017-10-27T15:05:30.579Z, gmtModified=2017-10-27T15:05:30.579Z, title=title, msg=msg, receiver=guest, bSent=0]
+2017-10-29 21:42:11.643 DEBUG 22952 --- [Thread-4] c.nbsunsoft.rtxproxy.service.RTXService  : send to http://127.0.0.1:8012/sendnotify.cgi?title=title&msg=msg&receiver=guest success
